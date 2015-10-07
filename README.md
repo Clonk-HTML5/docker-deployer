@@ -20,4 +20,4 @@ This repository contains **Dockerfile** of [deployer](http://deployer.org/) for 
 
 ### Usage
 
-    docker run --rm -v $(pwd)/deploy.php:/deploy.php:ro igortimoshenko/docker-deployer /vendor/bin/dep
+    docker run --rm -it -v $(pwd)/deploy.php:/deploy.php:ro igortimoshenko/docker-deployer /vendor/bin/dep
