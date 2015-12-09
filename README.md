@@ -6,7 +6,7 @@ This repository contains **Dockerfile** of [deployer](http://deployer.org/) for 
 
 ### Base Docker Image
 
-* [RobLoach/docker-composer](https://github.com/RobLoach/docker-composer)
+* [dockerfile/ubuntu](http://dockerfile.github.io/#/ubuntu)
 
 
 ### Installation
