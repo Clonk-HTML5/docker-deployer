@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 ENV DEBIAN_FRONTEND=noninteractive \
     TERM=xterm 
 
-RUN sudo apt-add-repository ppa:ondrej/php \
+RUN apt-add-repository ppa:ondrej/php \
     && apt-get update -y \
     && apt-get install -y \
         curl \
