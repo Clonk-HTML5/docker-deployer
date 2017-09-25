@@ -3,11 +3,12 @@ FROM ubuntu:14.04
 ENV DEBIAN_FRONTEND=noninteractive \
     TERM=xterm 
 
-RUN apt-get update -y \
+RUN sudo apt-add-repository ppa:ondrej/php \
+    && apt-get update -y \
     && apt-get install -y \
         curl \
         git \
-        php-cli \
+        php7.0 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -Ss https://getcomposer.org/installer | php \
