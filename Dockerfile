@@ -12,6 +12,6 @@ RUN apt-get update -y \
 
 RUN curl -Ss https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer \
-    && composer require deployer/deployer \
-    && composer require deployer/recipes \
+    && composer require deployer/deployer:^6.0.3 \
+    && composer require deployer/recipes:^6.0.1 \
     && composer clear-cache
