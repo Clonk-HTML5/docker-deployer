@@ -7,7 +7,7 @@ RUN apt-get update -y \
     && apt-get install -y \
         curl \
         git \
-        php7.0-cli \
+        php-cli \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -Ss https://getcomposer.org/installer | php \
