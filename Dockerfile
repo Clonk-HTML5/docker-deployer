@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    TERM=xterm
+    TERM=xterm 
 
 RUN apt-get update -y \
     && apt-get install -y \
