@@ -13,11 +13,11 @@ This repository contains **Dockerfile** of [deployer](http://deployer.org/) for 
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/igortimoshenko/docker-deployer/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull igortimoshenko/docker-deployer`
+2. Download [automated build](https://registry.hub.docker.com/u/christianr/deployer-php-recipes/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull christianr/deployer-php-recipes`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="igortimoshenko/docker-deployer" github.com/igortimoshenko/docker-deployer`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="christianr/deployer-php-recipes" github.com/igortimoshenko/docker-deployer`)
 
 
 ### Usage
 
-    docker run --rm -it -v $(pwd)/deploy.php:/deploy.php:ro igortimoshenko/docker-deployer /vendor/bin/dep
+    docker run --rm -it -v $(pwd)/deploy.php:/deploy.php:ro christianr/deployer-php-recipes /vendor/bin/dep
